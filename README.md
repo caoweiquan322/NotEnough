@@ -2,7 +2,7 @@
 
 
 
-This tool calculates tricky canonical huffman histogram, which is able to trigger OOB (Out Of Bound) write for vulnerable libwebp library (i.e. libwebp <= `1.3.1`). This vulnerability is known as `CVE-2023-4863`. We can overflow the pre-allocated huffman table by  at most **128 entries**.
+This tool calculates tricky canonical huffman histogram, which is able to trigger OOB (Out Of Bound) write for vulnerable libwebp library (i.e. libwebp <= `1.3.1`). This vulnerability is known as `CVE-2023-4863` or `CVE-2023-41064`. We can overflow the pre-allocated huffman table by  at most **128 entries**.
 
 
 
