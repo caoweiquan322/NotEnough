@@ -555,7 +555,7 @@ local void enough(int syms) {
     g.large = 1 << g.root;          // base table
     if (g.root < g.max) {             // otherwise, there's only a base table
         for (int n = 1; n <= syms; n++) {
-            for (int left = 2; left < n; left += 2) {
+            for (int left = 2; left <= 512; left += 2) {
 //        for (int n = 3; n <= syms; n++) {
 //            for (int left = 2; left < n; left += 2) {
                 // look at all reachable (root + 1) bit nodes, and the
